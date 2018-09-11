@@ -1,8 +1,7 @@
 package com.rssignaturecapture;
 
-import android.util.Log;
 import android.graphics.Color;
-
+import android.util.Log;
 import com.facebook.infer.annotation.Assertions;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReadableArray;
@@ -12,9 +11,8 @@ import com.facebook.react.uimanager.ViewGroupManager;
 import com.facebook.react.uimanager.annotations.ReactProp;
 import com.rssignaturecapture.RSSignatureCaptureContextModule;
 
-import java.util.Map;
-
 import javax.annotation.Nullable;
+import java.util.Map;
 
 public class RSSignatureCaptureViewManager extends ViewGroupManager<RSSignatureCaptureMainView> {
 

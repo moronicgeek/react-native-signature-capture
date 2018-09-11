@@ -1,32 +1,18 @@
 package com.rssignaturecapture;
 
 import android.content.Context;
-
-import android.content.res.Resources;
-import android.content.res.TypedArray;
-
-import android.util.Log;
-import android.view.View;
-import android.view.MotionEvent;
-
-import android.graphics.Paint;
-import android.graphics.Path;
-import android.graphics.Canvas;
-import android.graphics.Bitmap;
-import android.graphics.Color;
-import android.graphics.RectF;
-
+import android.graphics.*;
 import android.util.DisplayMetrics;
-
+import android.view.MotionEvent;
+import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
+import com.rssignaturecapture.utils.Bezier;
+import com.rssignaturecapture.utils.ControlTimedPoints;
+import com.rssignaturecapture.utils.TimedPoint;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import com.rssignaturecapture.utils.TimedPoint;
-import com.rssignaturecapture.utils.ControlTimedPoints;
-import com.rssignaturecapture.utils.Bezier;
 
 public class RSSignatureCaptureView extends View {
 	private static final float STROKE_WIDTH = 5f;
