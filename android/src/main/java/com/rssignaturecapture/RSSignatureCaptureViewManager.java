@@ -52,7 +52,7 @@ public class RSSignatureCaptureViewManager extends ViewGroupManager<RSSignatureC
 	@ReactProp(name = PROPS_VIEW_MODE)
 	public void setViewMode(RSSignatureCaptureMainView view, @Nullable String viewMode) {
 		Log.d("setViewMode:", "" + viewMode);
-		if(view!=null){
+		if(view!=null && color!=null){
 			view.setViewMode(viewMode);
 		}
 	}
