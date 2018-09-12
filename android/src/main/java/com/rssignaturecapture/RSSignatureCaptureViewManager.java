@@ -23,7 +23,7 @@ public class RSSignatureCaptureViewManager extends ViewGroupManager<RSSignatureC
 	public static final String PROPS_MIN_STROKE_WIDTH="minStrokeWidth";
 	public static final String PROPS_MAX_STROKE_WIDTH="maxStrokeWidth";
 	public static final String PROPS_STROKE_COLOR="strokeColor";
-	public static final String PROPS_BACKGROUND_COLOR="backgroundColor";
+	public static final String PROPS_BACKGROUND_COLOR="placeColor";
 
 	public static final int COMMAND_SAVE_IMAGE = 1;
 	public static final int COMMAND_RESET_IMAGE = 2;
@@ -50,7 +50,7 @@ public class RSSignatureCaptureViewManager extends ViewGroupManager<RSSignatureC
 	@ReactProp(name = PROPS_VIEW_MODE)
 	public void setViewMode(RSSignatureCaptureMainView view, @Nullable String viewMode) {
 		Log.d("setViewMode:", "" + viewMode);
-		if(view!=null && color!=null){
+		if(view!=null){
 			view.setViewMode(viewMode);
 		}
 	}
@@ -100,7 +100,7 @@ public class RSSignatureCaptureViewManager extends ViewGroupManager<RSSignatureC
 	@ReactProp(name = PROPS_BACKGROUND_COLOR)
 	public void setPropsBackgroundColor(RSSignatureCaptureMainView view, @Nullable String color) {
 		Log.d("backgroundColor:",  ""+color);
-		if(view!=null){
+		if(view!=null && color!=null){
 			view.getSignatureView().setBackgroundColor(Color.parseColor(color));
 		}
 	}

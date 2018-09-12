@@ -1,6 +1,9 @@
 # react-native-signature-capture
 
 ## About this
+
+NB NB NB!!! this project is a direct fork of the react-native-signature-component with the update of transparent backgrounds for android. Once the change has been made on the original library this library will be removed.
+
 React Native library for capturing signature
 
 User would sign on the app and when you press the save button it returns the base64 encoded png

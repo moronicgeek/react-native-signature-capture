@@ -1,6 +1,6 @@
 {
   "name": "s2-signature-capture",
-  "version": "0.4.9",
+  "version": "0.1.4",
   "description": "Lets users sign their signatures",
   "main": "SignatureCapture.js",
   "scripts": {
